@@ -3,8 +3,8 @@ server:
 spring:
  datasource:
    url: jdbc:mysql://127.0.0.1:3306/demo_service?useLegacyDatetimeCode=false&serverTimezone=Africa/Douala&zeroDateTimeBehavior=convertToNull&createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false
-   username: lorince
-   password: lorince12345
+   username: root
+   password: 
  jpa:
    show-sql: true
    hibernate:
