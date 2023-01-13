@@ -13,10 +13,6 @@ spring:
      hibernate:
        dialect: org.hibernate.dialect.MySQL8InnoDBDialect
        format_sql: true
- sql:
-   init:
-     mode: always
-     encoding: UTF-8
  
 eureka:
  instance:
