@@ -2,7 +2,7 @@ server:
  port: 8085
 spring:
  datasource:
-   url: jdbc:mysql://127.0.0.1:3306/demo_service?useLegacyDatetimeCode=false&serverTimezone=Africa/Douala&zeroDateTimeBehavior=convertToNull&createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false
+   url: jdbc:mysql://127.0.0.1:3306/restaurant_service?useLegacyDatetimeCode=false&serverTimezone=Africa/Douala&zeroDateTimeBehavior=convertToNull&createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false
    username: root
    password: 
  jpa:
@@ -10,7 +10,9 @@ spring:
    hibernate:
      ddl-auto: update
  
-
+   properties:
+     hibernate:
+       dialect: org.hibernate.dialect.MySQL5InnoDBDialect
  
 eureka:
  instance:
@@ -27,3 +29,4 @@ management:
  endpoint:
    health:
      show-details: "ALWAYS"
+ 
